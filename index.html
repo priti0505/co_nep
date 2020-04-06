@@ -4,6 +4,7 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <style type="text/css">
@@ -25,19 +26,26 @@
         height: 60px;
         line-height: 60px; /* Vertically center the text there */
         background-color: #f5f5f5;
+
       }
+
+
       /* Custom page CSS
       -------------------------------------------------- */
       /* Not required for template or sticky footer method. */
+
       body > .container {
         padding: 30px 40px 0;
       }
+
       .textof{
         font-size: 1.8rem;
       }
+
       .textof > .mt-5{
         padding-bottom: 20px;
       }
+
       .textof > .lead{
         
         -moz-osx-font-smoothing: grayscale;
@@ -46,13 +54,22 @@
         line-height: 34px;
         
       }
+
       .footer > .container {
         padding-right: 15px;
         padding-left: 15px;
       }
+
       code {
         font-size: 80%;
       }
+
+      header > nav > div > ul > li > . {
+
+        a:hover { color:#37404e !important; }
+        a:visited { color:#37404e !important; }
+      }
+
     </style>
     <title>Het Coronfonds Nepal</title>
   </head>
@@ -66,8 +83,8 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarCollapse">
            <ul class="nav navbar-nav justify-content-end mr-auto mt-2 mt-lg-0">
-            <li class="nav-item active">
-              <a class="nav-link" href="#waarom">Waarom het coronafonds? <span class="sr-only">(current)</span></a>
+            <li class="nav-item">
+              <a class="nav-link active" href="#waarom">Waarom het coronafonds? <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#wie">Voor wie en hoe?</a>
@@ -88,10 +105,10 @@
         </div>
       </nav>
     </header>
+
     <!-- Begin page content -->
     <main role="main" class="container">
       <div class="textof">
-        <div id="waarom"></div>
         <h1 class="mt-5" >Waarom het corona noodfonds?</h1>
         <p class="lead">
           Net als Europa en de rest van de wereld is Nepal economisch diep in zijn ziel geraakt door corona. In een land als Nepal dat na de verwoestende aardbeving van 2015 uit een heel diep dal langzaam naar boven krabbelt, komt deze crisis extra hard aan. De Nepalese regering heeft het land volledig in een "lock down" gezet om een verdere verspreiding van het coronavirus in te dammen. De arme Nepalezen die van dag tot dag leven komen direct in de problemen met hun levensonderhoud, omdat er geen levensmiddelen voorhanden zijn. Een overgroot deel van de Nepalezen is volledig afhankelijk van de inkomsten uit loonarbeid. Als dit wegvalt, is er geen vangnet waar ze aanspraak op kunnen maken. 
@@ -124,6 +141,7 @@
           Met het coronafonds voor Nepal gaan we de allerarmsten bevolking in de afgelegen gebieden die direct getroffen is, helpen met levens- en hygienische middelen. We werken daarvoor samen met onze lokale partners die als vrijwilliger dagelijks mensen in nood aan het helpen zijn. Het voorzien in de eerste levensbehoeften en in hygienische middelen van Nepalezen die door het coronacrisis getroffen zijn, is de hoofddoelstelling van het coronafonds Nepal. 
         </p>
     </div>
+
      <div class="textof">
       <h1 class="mt-5" id="doneer">Hoe kunt u helpen?</h1>
       <p class="lead">
@@ -133,6 +151,7 @@
           <img src="./img/anbi-logo.jpeg" class="ml-3" alt="...">
       </p>
     </div>
+
      <div class="textof">
       <h1 class="mt-5" id="contact">Contact</h1>
       <p class="lead">
@@ -144,13 +163,16 @@
        www.coronafondsnepal.nl
       </p>
     </div>
+
      <div class="textof" style="padding-bottom: 90px">
       <h1 class="mt-5" id="update_nepal">Corona Update Nepal</h1>
       <p class="lead">
         <a class="nav-link" href="https://covid19.mohp.gov.np">https://covid19.mohp.gov.np <span class="sr-only">(current)</span></a>
       </p>
     </div>
+
     </main>
+
     <footer class="footer">
       <div class="container textof">
         <span class="text-muted lead">Namaste & hartelijk dank voor uw steun!   </span>
@@ -161,5 +183,13 @@
       <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
       <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
       <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+      <script>
+        $(document).ready(function(){  
+          $(".nav-link").click(function(e){
+            $('.nav-link.active').toggleClass('active');
+            $(e.target).toggleClass('active');
+          });
+        });
+    </script>
   </body>
 </html>
